@@ -34,10 +34,7 @@
     "eject": "react-scripts eject"
   },
   "browserslist": [
-    ">0.2%",
-    "last 3 Chrome versions",
-    "not ie <= 11",
-    "not op_mini all"
+    "defaults"
   ],
   "devDependencies": {
     "@babel/runtime": "^7.1.5"
