@@ -32,7 +32,7 @@ class userTemplate extends Component {
     var tempType = sessionStorage.getItem("userTempType");
 
     axios
-      .get("http://localhost:6005/createTemplate/getTemplateInfo")
+      .get("http://localhost:6003/createTemplate/getTemplateInfo")
       .then(response => {
         console.log(response);
         var divHtml = "";
