@@ -39,7 +39,7 @@ class templateSelection extends Component {
     debugger;
     var categoryInfo = [];
     axios
-      .get("http://localhost:6005/createcategory/getcategoryInfoWithoutPara")
+      .get("http://localhost:6003/createcategory/getcategoryInfoWithoutPara")
       .then(response => {
         console.log(response);
         categoryInfo = response.data.categoryLocalData;
@@ -49,7 +49,7 @@ class templateSelection extends Component {
       });
 
     axios
-      .get("http://localhost:6005/category/getCategoryInformationWithoutPara")
+      .get("http://localhost:6003/category/getCategoryInformationWithoutPara")
       .then(response => {
         console.log(response);
         var divHtml = "";
@@ -120,7 +120,7 @@ class templateSelection extends Component {
     };
 
     axios
-      .post("http://localhost:6005/createTemplate/createTemplate", userData)
+      .post("http://localhost:6003/createTemplate/createTemplate", userData)
       .then(response => {
         console.log(response);
         this.props.history.push(`/admin`);
