@@ -44,7 +44,7 @@ class selectedCategorySectionQuestion extends Component {
     //this.setState({ cat_name: cat_name, section_name: section_name });
 
     axios
-      .get("http://localhost:6005/savedSectionQuestion/getSelectedQuestions", {
+      .get("http://localhost:6003/savedSectionQuestion/getSelectedQuestions", {
         params: {
           sec_ID: sec_ID
         }
@@ -86,7 +86,7 @@ class selectedCategorySectionQuestion extends Component {
     showLoader();
 
     axios
-      .get("http://localhost:6005/category/getCategoryInformation", {
+      .get("http://localhost:6003/category/getCategoryInformation", {
         params: {
           cat_name: cat_name
         }
@@ -124,7 +124,7 @@ class selectedCategorySectionQuestion extends Component {
 
       axios
         .post(
-          "http://localhost:6005/filteredSectionQuestion/addFilteredSectionQuestion",
+          "http://localhost:6003/filteredSectionQuestion/addFilteredSectionQuestion",
           userData
         )
         .then(response => {
