@@ -43,7 +43,7 @@ class Register extends Component {
     debugger;
     var divHtml = "";
     axios
-      .post("http://localhost:6005/user/register", userData)
+      .post("http://localhost:6003/user/register", userData)
       .then(response => {
         console.log(response);
         this.props.history.push(`/login`);
