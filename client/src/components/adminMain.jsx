@@ -25,7 +25,7 @@ class adminMain extends Component {
     var email = sessionStorage.getItem("userEmail");
 
     axios
-      .get("http://localhost:6005/customerRegister/getCustomer")
+      .get("http://localhost:6003/customerRegister/getCustomer")
       .then(response => {
         console.log(response);
         companyName = response.data.customerLocalData;
