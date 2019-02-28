@@ -22,7 +22,7 @@ class category extends Component {
     var divHtml = "";
 
     axios
-      .get("http://localhost:6005/category/getCategoryInformation")
+      .get("http://localhost:6003/category/getCategoryInformation")
       .then(response => {
         console.log(response);
         categoryName = response.data.categoryLocalData;
