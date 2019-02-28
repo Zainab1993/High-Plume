@@ -58,7 +58,7 @@ class Login extends Component {
     // console.log(userData);
 
     axios
-      .post("http://localhost:6005/userLogin/login", userData)
+      .post("http://localhost:6003/userLogin/login", userData)
       .then(response => {
         debugger;
         console.log(response);
@@ -89,7 +89,7 @@ class Login extends Component {
       this.props.history.push(`/admin`);
     } else {
       axios
-        .post("http://localhost:6005/customerLogin/customerlogin", userData)
+        .post("http://localhost:6003/customerLogin/customerlogin", userData)
         .then(response => {
           debugger;
           console.log(response);
