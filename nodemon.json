@@ -1,6 +1,6 @@
 {
   "env": {
-    "MONGO_ALTAS_PW": "node-rest-shop",
+    "MONGO_ALTAS_PW": "highplumego",
     "JWT_KEY": "secret"
   }
 }
