@@ -42,6 +42,8 @@ const mongoose = require("mongoose");
 var cookieParser = require("cookie-parser");
 var cors = require("cors");
 var session = require("express-session");
+const path = require("path");
+app.use(express.static(path.join(__dirname, "client/build")));
 
 app.use(cors());
 mongoose.Promise = global.Promise;
@@ -73,8 +75,6 @@ app.use(
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-const path = require(“path”);
-app.use(express.static(path.join(__dirname, “client/build”)));
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
