@@ -3,11 +3,10 @@ const Schema = mongoose.Schema;
 var autoIncrement = require("mongoose-auto-increment");
 mongoose
   .connect(
-    "mongodb://node-rest-shop:" +
+    "mongodb://highplume:" +
       process.env.MONGO_ALTAS_PW +
-      "@node-shop-shard-00-00-bfcde.mongodb.net:27017,node-shop-shard-00-01-bfcde.mongodb.net:27017,node-shop-shard-00-02-bfcde.mongodb.net:27017/test?ssl=true&replicaSet=node-shop-shard-0&authSource=admin&retryWrites=true",
+      "localhost:27017/admin",
     {
-      // useCreateIndex: true,
       useMongoClient: true
     }
   )
