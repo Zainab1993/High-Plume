@@ -3,8 +3,6 @@ const router = express.Router();
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 var session = require("express-session");
-const startUp = require("../models/loan");
-const financial = require("../models/financial");
 const Customer = require("../models/registerCustomer");
 const Register = require("../models/user");
 
